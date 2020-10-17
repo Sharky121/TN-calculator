@@ -1,0 +1,10 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.main-content__calculation-result {
+  margin-top: 20px;
+}

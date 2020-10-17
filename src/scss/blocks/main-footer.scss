@@ -1,0 +1,13 @@
+.main-footer__container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 16px;
+}
+
+@include tablet-size {
+  .main-footer__container {
+    max-width: 490px;
+    padding: 40px 16px;
+  }
+}

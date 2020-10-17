@@ -1,0 +1,12 @@
+.container {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@include tablet-size {
+  .container {
+    max-width: 600px;
+  }
+}
+

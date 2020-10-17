@@ -1,0 +1,9 @@
+.current-step__subtitle {
+  margin-bottom: 20px;
+}
+
+@include tablet-size {
+  .current-step__subtitle {
+    margin-bottom: 40px;
+  }
+}

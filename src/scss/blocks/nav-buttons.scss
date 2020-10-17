@@ -1,0 +1,15 @@
+.nav-buttons__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

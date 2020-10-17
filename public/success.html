@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>TN 4-1-3</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="main-header__container container">
+        <a class="logo" href="/">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo-desktop.svg">
+            <img class="logo__img" src="images/logo-mobile.svg" width="32" height="32" alt="«Технониколь»">
+          </picture>
+        </a>
+        <div class="main-header__my-calc my-calc">
+          <p class="my-calc__text">Мои расчеты:</p>
+          <a class="my-calc__count">3</a>
+        </div>
+        <a class="main-header__button btn" href="">Добавить <span>&nbsp;расчёт</span></a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Калькулятор расчета теплозащиты и звукоизоляции</h1>
+      <section class="main-content__calculation-result calculation-result">
+        <div class="container">
+          <ul class="calculation-result__list">
+            <li class="calculation-result__item">Тип расчета: <b>Звукоизоляция</b></li>
+            <li class="calculation-result__item">Тип конструкции: <b>Выбранный тип конструкции</b></li>
+            <li class="calculation-result__item">Тип системы: <b>ТН-ВЫБРАННЫЙ Тип системы</b></li>
+            <li class="calculation-result__item">Материал конструкции: <b>ТЕХНОФАС Коттедж</b></li>
+            <li class="calculation-result__item">Толщина: <b>100 ММ</b></li>
+          </ul>
+
+          <a class="calculation-result__btn btn" href="">Редактировать</a>
+
+          <div class="calculation-result__message result-message">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

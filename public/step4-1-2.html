@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Технониколь Калькулятор расчета теплозащиты и звукоизоляции</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="main-header__container container">
+        <a class="logo" href="/">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo-desktop.svg">
+            <img class="logo__img" src="images/logo-mobile.svg" width="32" height="32" alt="«Технониколь»">
+          </picture>
+        </a>
+        <div class="main-header__my-calc my-calc">
+          <p class="my-calc__text">Мои расчеты:</p>
+          <a class="my-calc__count">3</a>
+        </div>
+        <a class="main-header__button btn" href="">Добавить <span>&nbsp;расчёт</span></a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Калькулятор расчета теплозащиты и звукоизоляции</h1>
+      <!-- ПРЕДЫДУЩИЕ ШАГИ -->
+      <section class="previous-step">
+        <div class="container">
+          <h2 class="visually-hidden">Предыдущие шаги</h2>
+          <ul class="previous-step__list">
+            <li class="previous-step__item">Шаг 1. Тип расчета: <br><b>Звукоизоляция</b></li>
+            <li class="previous-step__item">Шаг 2. Тип конструкции: <br><b>Выбранный тип конструкции</b></li>
+            <li class="previous-step__item">Шаг 3. Тип системы: <br><b>ТН-ВЫБРАННЫЙ Тип системы</b></li>
+          </ul>
+        </div>
+      </section>
+      <!-- ТЕКУЩИЙ ШАГ -->
+      <!-- ПАРАМЕТРЫ СИСТЕМЫ -->
+      <section class="current-step">
+        <div class="container">
+          <h2 class="current-step__subtitle subtitle">Шаг 4. Введите параметры:</h2>
+          <form class="current-step__form calc-form" action="">
+            <ul class="calc-form__list">
+              <li class="calc-form__item">
+                <label class="calc-form__label" for="system-area">Площадь системы:</label>
+                <input class="calc-form__input" type="text" name="system-area" id="system-area">
+                <span class="calc-form__measure">М<sup>2</sup></span>
+              </li>
+              <li class="calc-form__item">
+                <label class="calc-form__label" for="system-location">Расположение системы:</label>
+                <select class="calc-form__select" name="system-location" id="system-location">
+                  <option>Стены и перегородки между квартирами, между помещениями квартир и  лестничными клетками, холлами, коридорами, вестибюлями</option>
+                  <option>Стены между помещениями квартир и магазинами</option>
+                  <option>Стены и перегородки, отделяющие помещения квартир от ресторанов, кафе, спортивных залов</option>
+                  <option>Перегородки без дверей между комнатами, между кухней и комнатой в квартире</option>
+                  <option>Перегородки между санузлом и комнатой одной квартиры</option>
+                  <option>Стены и перегородки между комнатами общежитий</option>
+                </select>
+              </li>
+              <li class="calc-form__item">
+                <label class="calc-form__label" for="material">Материал:</label>
+                <select class="calc-form__select" name="material" id="material">
+                  <option selected>Выберите материал</option>
+                  <option>Газобетон или пенобетон</option>
+                  <option>Кирпич</option>
+                </select>
+              </li>
+              <li class="calc-form__item">
+                <label class="calc-form__label" for="material-density">Плотность материала:</label>
+                <input class="calc-form__input" type="text" name="material-density" id="material-density">
+                <span class="calc-form__measure">ρ, КГ/М<sup>2</sup></span>
+              </li>
+              <li class="calc-form__item">
+                <label class="calc-form__label" for="thickness-construction">Толщина конструкции:</label>
+                <input class="calc-form__input" type="text" name="thickness-construction" id="thickness-construction">
+                <span class="calc-form__measure">Метров</span>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <!-- НАВИГАЦИОННЫЕ КНОПКИ -->
+      <section class="main-footer__nav-buttons nav-buttons">
+        <div class="main-footer__container container">
+          <h2 class="visually-hidden">Навигация</h2>
+          <ul class="nav-buttons__list">
+            <li class="nav-buttons__item">
+              <a class="btn">Назад</a>
+            </li>
+            <li class="nav-buttons__item">
+              <a class="btn">Далее</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

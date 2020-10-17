@@ -1,0 +1,8 @@
+.calculation-result__list {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.calculation-result__item {
+  margin-bottom: 10px;
+}

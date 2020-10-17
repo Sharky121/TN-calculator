@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (1.0+r73+1)"
+   sodipodi:docname="logo-mobile.svg"
+   id="svg8"
+   viewBox="0 0 99.971675 99.212"
+   height="32"
+   width="32"
+   version="1.1">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="1"
+     inkscape:window-y="27"
+     inkscape:window-x="59"
+     inkscape:cy="16"
+     inkscape:cx="94"
+     inkscape:zoom="4.2234043"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="1025"
+     inkscape:window-width="1861"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="g6"
+     class="logo__badge">
+    <polygon
+       id="polygon2"
+       points="93.234,0 99.209,5.975 99.209,79.369 79.369,99.207 5.976,99.212 0,93.234 0,19.842 19.843,0 "
+       fill="#ed1c24" />
+    <polygon
+       id="polygon4"
+       points="14.11,29.766 14.11,37.659 25.468,37.659 25.468,67.767 0.002,93.234 0.002,99.212 5.976,99.207 34.027,71.156 34.027,37.659 45.381,37.659 45.381,69.445 53.831,69.445 53.831,44.326 72.111,69.445 79.369,69.445 79.369,25.815 99.21,5.975 99.209,0 93.234,0 70.92,22.314 70.92,54.884 52.641,29.766 "
+       fill="#ffffff" />
+  </g>
+</svg>

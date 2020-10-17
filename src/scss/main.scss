@@ -1,0 +1,26 @@
+// Library
+@import "normalize";
+
+// Abstract
+@import "variables";
+@import "mixin";
+
+// Base
+@import "fonts";
+@import "base";
+@import "blocks/buttons";
+
+// Blocks
+@import "blocks/container";
+@import "blocks/calc-form";
+@import "blocks/main-header";
+@import "blocks/main-footer";
+@import "blocks/logo";
+@import "blocks/my-calc";
+@import "blocks/previous-step";
+@import "blocks/current-step";
+@import "blocks/main-content";
+@import "blocks/nav-buttons";
+@import "blocks/cards";
+@import "blocks/card";
+@import "blocks/calculation-result";

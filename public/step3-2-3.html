@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Технониколь Калькулятор расчета теплозащиты и звукоизоляции</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="main-header__container container">
+        <a class="logo" href="/">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo-desktop.svg">
+            <img class="logo__img" src="images/logo-mobile.svg" width="32" height="32" alt="«Технониколь»">
+          </picture>
+        </a>
+        <div class="main-header__my-calc my-calc">
+          <p class="my-calc__text">Мои расчеты:</p>
+          <a class="my-calc__count">3</a>
+        </div>
+        <a class="main-header__button btn" href="">Добавить <span>&nbsp;расчёт</span></a>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Калькулятор расчета теплозащиты и звукоизоляции</h1>
+      <!-- ПРЕДЫДУЩИЕ ШАГИ -->
+      <section class="previous-step">
+        <div class="container">
+          <h2 class="visually-hidden">Предыдущие шаги</h2>
+          <ul class="previous-step__list">
+            <li class="previous-step__item">Шаг 1. Тип расчета: <br><b>Теплоизоляция</b></li>
+            <li class="previous-step__item">Шаг 2. Тип конструкции: <br><b>Балкон</b></li>
+          </ul>
+        </div>
+      </section>
+      <!-- ТЕКУЩИЙ ШАГ -->
+      <!-- КАРТОЧКИ ТИПА СИСТЕМЫ -->
+      <section class="current-step cards">
+        <div class="container">
+          <h2 class="current-step__subtitle subtitle">Шаг 3. Выберите тип системы:</h2>
+        </div>
+        <div class="cards__container">
+          <ul class="cards__list">
+            <li class="cards__item card">
+              <img class="card__img" src="images/image_10.jpg" width="100" height="100" alt="ТН-СТЕНА Балкон">
+              <h3 class="card__title">ТН-СТЕНА Балкон</h3>
+              <p class="card__description">Система фасада с облицовкой виниловым сайдингом по каменному основанию</p>
+            </li>
+            <li class="cards__item card card--grey"></li>
+            <li class="cards__item card card--grey"></li>
+            <li class="cards__item card card--grey"></li>
+            <li class="cards__item card card--grey"></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <!-- НАВИГАЦИОННЫЕ КНОПКИ -->
+      <section class="main-footer__nav-buttons nav-buttons">
+        <div class="main-footer__container container">
+          <h2 class="visually-hidden">Навигация</h2>
+          <ul class="nav-buttons__list">
+            <li class="nav-buttons__item">
+              <a class="btn">Назад</a>
+            </li>
+            <li class="nav-buttons__item">
+              <a class="btn">Далее</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

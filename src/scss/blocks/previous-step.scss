@@ -1,0 +1,27 @@
+.previous-step {
+  margin-bottom: 20px;
+}
+
+.previous-step__list {
+  @include list-reset;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid $color-crimson;
+}
+
+.previous-step__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include tablet-size {
+  .previous-step__item {
+    br {
+      display: none;
+    }
+  }
+}

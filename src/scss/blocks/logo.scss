@@ -1,0 +1,11 @@
+.logo__img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@include tablet-size {
+  .logo__img {
+    width: 188px;
+  }
+}

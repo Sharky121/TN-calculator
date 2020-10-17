@@ -1,0 +1,60 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 0 10px;
+
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.main-header__button {
+  span {
+    display: none;
+  }
+}
+
+.btn {
+  @include button-reset;
+
+  display: inline-block;
+  min-width: 140px;
+  padding: 0.80em 1em 0.8em 1em;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+@include tablet-size {
+  .button {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+
+  .main-header__button {
+    span {
+      display: inline;
+    }
+  }
+
+  .btn {
+    min-width: 200px;
+  }
+}
