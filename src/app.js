@@ -7,6 +7,11 @@ import './images/icon1.svg'
 import './images/icon2.svg'
 import './images/icon-acoustic.svg'
 import './images/icon-shockproof.svg'
+import './images/thumbs_up.svg'
+import './images/thumbs_down.svg'
+import './images/packages.svg'
+import './images/cart.svg'
+import './images/shipment.svg'
 
 // IMAGES
 import './images/placeholder.png'

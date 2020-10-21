@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Технониколь Калькулятор расчета теплозащиты и звукоизоляции</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__container container">
+      <a class="logo" href="/">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/logo-desktop.svg">
+          <img class="logo__img" src="images/logo-mobile.svg" width="32" height="32" alt="«Технониколь»">
+        </picture>
+      </a>
+      <div class="main-header__my-calc my-calc">
+        <p class="my-calc__text">Мои расчеты:</p>
+        <a class="my-calc__count">3</a>
+      </div>
+      <a class="main-header__button btn" href="">Добавить <span>&nbsp;расчёт</span></a>
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="visually-hidden">Калькулятор расчета теплозащиты и звукоизоляции</h1>
+    <section class="current-step">
+      <div class="container">
+        <h2 class="current-step__subtitle subtitle">Шаг 1. Выберите тип расчёта:</h2>
+        <form class="current-step__form calc-form" action="">
+          <ul>
+            <li>
+              <label for="thermal-insulation">Теплоизоляция</label>
+              <input type="radio" name="calc-type" id="thermal-insulation">
+            </li>
+            <li>
+              <label for="soundproofing">Звукоизоляция</label>
+              <input type="radio" name="calc-type" id="soundproofing">
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <!-- НАВИГАЦИОННЫЕ КНОПКИ -->
+    <section class="main-footer__nav-buttons nav-buttons">
+      <div class="main-footer__container container">
+        <h2 class="visually-hidden">Навигация</h2>
+        <ul class="nav-buttons__list">
+          <li class="nav-buttons__item">
+            <a class="btn">Назад</a>
+          </li>
+          <li class="nav-buttons__item">
+            <a class="btn">Далее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+  <script src="bundle.js"></script>
+</body>
+</html>

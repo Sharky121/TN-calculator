@@ -1,0 +1,44 @@
+.calc-features {
+  background-color: #ffffff;
+}
+
+.calc-features__container {
+  max-width: 767px;
+  padding: 20px;
+}
+
+.calc-features__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.calc-features__list {
+  @include list-reset;
+
+  text-align: left;
+}
+
+.calc-features__item {
+  position: relative;
+
+  padding-left: 15px;
+
+  font-weight: 400;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 4px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: $color-crimson;
+  }
+}

@@ -1,0 +1,30 @@
+.result-tables__container {
+  padding-bottom: 40px;
+  margin-bottom: 2px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $color-grey;
+}
+
+.result-tables__list {
+  @include list-reset;
+
+  margin-bottom: 40px;
+}
+
+.result-tables__item {
+  @include box-shadow;
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  text-align: left;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

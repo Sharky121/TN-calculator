@@ -1,0 +1,28 @@
+.control-buttons__container {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid $color-grey;
+}
+
+.control-buttons__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.control-buttons__item {
+  flex-grow: 2;
+
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.control-buttons__btn {
+  width: 100%;
+}

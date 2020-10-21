@@ -1,0 +1,53 @@
+.result-calc-item__list {
+  @include list-reset;
+
+}
+
+.result-calc-item {
+  position: relative;
+
+  padding: 20px 60px 20px 120px;
+
+  border-bottom: 1px solid $color-grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 80px;
+    height: 75px;
+    margin-top: -35px;
+
+    background-size: cover;
+  }
+}
+
+.result-calc-item--material::before {
+  background-image: url("../images/packages.svg");
+}
+
+.result-calc-item--transport::before {
+  background-image: url("../images/shipment.svg");
+}
+
+.result-calc-item--info::before {
+  background-image: url("../images/cart.svg");
+}
+
+.result-calc-item__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
+.result-calc-item__desc {
+  margin: 0;
+}

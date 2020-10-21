@@ -1,0 +1,51 @@
+.recommend-message__container {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid $color-grey;
+}
+
+.recommend-message__title {
+  position: relative;
+
+  margin: 0;
+  padding-left: 90px;
+  padding-right: 60px;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.recommend-message--success .recommend-message__title {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 65px;
+    height: 59px;
+    margin-top: -30px;
+
+    background-image: url("../images/thumbs_up.svg");
+    background-size: cover;
+  }
+}
+
+.recommend-message--unsuccess .recommend-message__title {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 65px;
+    height: 59px;
+    margin-top: -30px;
+
+    background-image: url("../images/thumbs_down.svg");
+    background-size: cover;
+  }
+}
