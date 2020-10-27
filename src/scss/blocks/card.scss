@@ -1,25 +1,54 @@
 .card {
   position: relative;
+}
 
-  min-height: 230px;
+.card__wrapper {
+  position: relative;
+
+  min-height: 260px;
   padding: 10px 10px 20px;
 
   background-color: #ffffff;
+  border: 2px solid transparent;
   border-radius: 5px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+.card__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
 }
 
 .card__img {
   width: 100px;
   height: 100px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.card__title {
+.card__label {
+  display: block;
   margin: 0 -10px 10px;
   padding: 0 10px 10px;
 
   font-size: 12px;
+  font-weight: 600;
   text-align: left;
   border-bottom: 1px solid #dbdbdb;
 }
@@ -31,7 +60,7 @@
   text-align: left;
 }
 
-.card--acoustic {
+.card--acoustic .card__wrapper  {
 
   &::before {
     content: '';
@@ -48,7 +77,7 @@
   }
 }
 
-.card--shockproof {
+.card--shockproof .card__wrapper {
 
   &::before {
     content: '';
@@ -65,8 +94,12 @@
   }
 }
 
-.card--grey {
+.card--empty .card__wrapper {
   background-color: $color-mercury;
 
   box-shadow: none;
+}
+
+.card__input:checked + .card__wrapper {
+  border: 2px solid $color-crimson;
 }

@@ -24,25 +24,31 @@
       <a class="main-header__button btn" href="">Добавить <span>&nbsp;расчёт</span></a>
     </div>
   </header>
-  <main class="main-content">
+  <main class="main-content main-content--first-step">
     <h1 class="visually-hidden">Калькулятор расчета теплозащиты и звукоизоляции</h1>
-    <section class="current-step">
-      <div class="container">
-        <h2 class="current-step__subtitle subtitle">Шаг 1. Выберите тип расчёта:</h2>
+    <div class="container">
+      <h2 class="subtitle">Шаг 1. Выберите тип расчёта:</h2>
+      <div class="type-calc">
         <form class="current-step__form calc-form" action="">
-          <ul>
-            <li>
-              <label for="thermal-insulation">Теплоизоляция</label>
-              <input type="radio" name="calc-type" id="thermal-insulation">
+          <ul class="type-calc__list">
+            <li class="type-calc__item type-calc-item type-calc-item--heat">
+              <input class="type-calc-item__input" id="thermal-insulation" type="radio" name="calc-type">
+              <div class="type-calc-item__wrapper">
+                <img src="images/tp-white-2.svg" width="132" height="140" alt="Теплоизоляция">
+              </div>
+              <label class="type-calc-item__label" for="thermal-insulation">Теплоизоляция</label>
             </li>
-            <li>
-              <label for="soundproofing">Звукоизоляция</label>
-              <input type="radio" name="calc-type" id="soundproofing">
+            <li class="type-calc__item type-calc-item type-calc-item--acoustic">
+              <input class="type-calc-item__input" id="soundproofing" type="radio" name="calc-type">
+              <div class="type-calc-item__wrapper">
+                <img src="images/icon-acoustic-white_2.svg" width="140" height="126" alt="Звукоизоляция">
+              </div>
+              <label class="type-calc-item__label" for="soundproofing">Звукоизоляция</label>
             </li>
           </ul>
         </form>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="main-footer">
     <!-- НАВИГАЦИОННЫЕ КНОПКИ -->

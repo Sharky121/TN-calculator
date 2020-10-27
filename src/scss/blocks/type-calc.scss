@@ -1,0 +1,15 @@
+.type-calc__list {
+  @include list-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-calc__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
