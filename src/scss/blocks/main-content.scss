@@ -9,6 +9,8 @@
   padding-bottom: 40px;
 }
 
-.main-content--first-step {
-  justify-content: center;
+@include tablet-size {
+  .main-content--first-step {
+    justify-content: center;
+  }
 }

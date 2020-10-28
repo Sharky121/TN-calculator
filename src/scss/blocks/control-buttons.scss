@@ -1,6 +1,6 @@
 .control-buttons__container {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   border-bottom: 1px solid $color-grey;
 }
@@ -9,6 +9,7 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: stretch;
   align-items: center;
 }
@@ -16,13 +17,29 @@
 .control-buttons__item {
   flex-grow: 2;
 
-  margin-right: 10px;
+  margin-bottom: 10px;
 
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .control-buttons__btn {
   width: 100%;
+}
+
+@include tablet-size {
+  .control-buttons__container {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .control-buttons__item {
+    margin-bottom: 0;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

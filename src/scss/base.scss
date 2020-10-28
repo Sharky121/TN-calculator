@@ -70,37 +70,31 @@ img {
     padding-bottom: 60px;
   }
 
-  body.heat-calculation::before {
-    content: "";
+  .sound-calculation {
+    position: relative;
 
-    position: absolute;
-    top: 75px;
-    left: -160px;
-
-    width: 40%;
-    padding-top: 40%;
-
-    background-image: url("../images/tp-white.svg");
-    background-size: cover;
-
-    opacity: 0.6;
-    z-index: -1;
+    overflow: hidden;
   }
 
-  body.sound-calculation::before {
-    content: "";
+  body.heat-calculation {
+    background-image: url("../images/tp-bg.svg"), linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+    background-size: 40%, 100%;
+    background-position: -15% 100px, 100% 100%;
+    background-repeat: no-repeat, repeat;
+  }
 
-    position: absolute;
-    top: 75px;
-    right: 0;
+  body.sound-calculation {
+    background-image: url("../images/icon-acoustic-white.svg"), linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+    background-size: 40%, 100%;
+    background-position: 115% 110px, 100% 100%;
+    background-repeat: no-repeat, repeat;
+  }
 
-    width: 40%;
-    padding-top: 40%;
-
-    background-image: url("../images/icon-acoustic-white.svg");
-    background-size: cover;
-
-    z-index: -1;
+  body.result-calculation {
+    background-image: url("../images/tp-bg.svg"), url("../images/icon-acoustic-white.svg"), linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+    background-size: 40%, 40%, 100%;
+    background-position: -15% 190px, 115% 190px, 100% 100%;
+    background-repeat: no-repeat, no-repeat, repeat;
   }
 
   .subtitle {

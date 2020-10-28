@@ -1,21 +1,3 @@
-.button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 32px;
-  padding: 0 10px;
-
-  font-size: 12px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  border: 2px solid #000000;
-  border-radius: 5px;
-}
-
 .main-header__button {
   span {
     display: none;
@@ -40,6 +22,51 @@
   background-color: transparent;
   border: 2px solid #000000;
   border-radius: 5px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: #ffffff;
+
+    background-color: #000000;
+    border-color: #000000;
+  }
+}
+
+.btn--red {
+  @include box-shadow-red;
+
+  color: #ffffff;
+
+  background-color: $color-crimson;
+  border-color: $color-crimson;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $color-crimson;
+
+    background-color: #ffffff;
+    border-color: $color-crimson;
+  }
+}
+
+.btn--white {
+  @include box-shadow-red;
+
+  color: $color-crimson;
+
+  background-color: #ffffff;
+  border-color: $color-crimson;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: #ffffff;
+
+    background-color: $color-crimson;
+    border-color: $color-crimson;
+  }
 }
 
 @include tablet-size {

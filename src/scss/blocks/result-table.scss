@@ -22,10 +22,16 @@
 }
 
 .result-table__td {
-  padding: 5px 20px 2px;
+  padding: 5px 10px 2px;
   vertical-align: bottom;
 
   &:last-child {
     text-align: right;
+  }
+}
+
+@include tablet-size {
+  .result-table__td {
+    padding: 5px 20px 2px;
   }
 }

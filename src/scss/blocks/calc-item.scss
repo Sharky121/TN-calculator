@@ -1,8 +1,25 @@
+.calc-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .calc-item__table {
   margin-bottom: 20px;
 }
 
 .calc-item__btn {
-  padding: 7px 15px;
-  margin-left: 20px;
+  width: 85%;
+}
+
+@include tablet-size {
+  .calc-item {
+    display: block;
+  }
+
+  .calc-item__btn {
+    width: auto;
+    padding: 7px 15px;
+    margin-left: 20px;
+  }
 }

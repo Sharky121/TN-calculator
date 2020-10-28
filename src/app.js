@@ -16,6 +16,7 @@ import './images/tp-white.svg'
 import './images/icon-acoustic-white.svg'
 import './images/icon-acoustic-white_2.svg'
 import './images/tp-white-2.svg'
+import './images/tp-bg.svg'
 
 // IMAGES
 import './images/placeholder.png'

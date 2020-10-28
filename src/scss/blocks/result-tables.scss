@@ -28,3 +28,13 @@
     margin-bottom: 0;
   }
 }
+
+.result-tables__btn {
+  width: 100%;
+}
+
+@include tablet-size {
+  .result-tables__btn {
+    width: auto;
+  }
+}

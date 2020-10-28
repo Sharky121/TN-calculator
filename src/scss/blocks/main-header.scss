@@ -28,6 +28,10 @@
 }
 
 @include tablet-size {
+  .main-header {
+    margin-bottom: 40px;
+  }
+
   .main-header__container {
     padding: 0 24px;
   }
