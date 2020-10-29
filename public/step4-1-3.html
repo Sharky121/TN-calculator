@@ -41,7 +41,7 @@
       <!-- ПАРАМЕТРЫ СИСТЕМЫ -->
       <section class="current-step">
         <div class="container">
-          <h2 class="current-step__subtitle subtitle">Шаг 4. Введите параметры:</h2>
+          <h2 class="current-step__subtitle subtitle">Шаг 4. Введите параметры: <a class="tooltip">?</a></h2>
           <form class="current-step__form calc-form" action="">
             <ul class="calc-form__list">
               <li class="calc-form__item">
@@ -68,10 +68,11 @@
                   <option>Кирпич</option>
                 </select>
               </li>
-              <li class="calc-form__item">
+              <li class="calc-form__item calc-form__item--error">
                 <label class="calc-form__label" for="material-density">Плотность материала:</label>
                 <input class="calc-form__input" type="text" name="material-density" id="material-density">
                 <span class="calc-form__measure">ρ, КГ/М<sup>2</sup></span>
+                <p class="calc-form__error">Обязательное поле</p>
               </li>
               <li class="calc-form__item">
                 <label class="calc-form__label" for="thickness-construction">Толщина конструкции:</label>
@@ -105,6 +106,10 @@
     </main>
 
     <footer class="main-footer">
+      <!-- ОШИБКА ЗАПОЛНЕНИЯ ФОРМЫ -->
+      <div class="container">
+        <p class="main-footer__error">Ошибка заполнения формы!</p>
+      </div>
       <!-- НАВИГАЦИОННЫЕ КНОПКИ -->
       <section class="main-footer__nav-buttons nav-buttons">
         <div class="main-footer__container container">

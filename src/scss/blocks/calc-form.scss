@@ -8,6 +8,7 @@
 }
 
 .calc-form__input {
+  width: 50%;
   padding: 11px 35px 11px 15px;
 
   line-height: 1;
@@ -72,3 +73,25 @@
   padding-left: 10px;
 }
 
+.calc-form__item--error {
+  .calc-form__input {
+    outline: none;
+    border-color: $color-crimson;
+    box-shadow: 0 0 10px $color-crimson;
+  }
+
+  .calc-form__measure {
+    color: $color-crimson;
+  }
+}
+
+.calc-form__error {
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  color: $color-crimson;
+}
+
+@include tablet-size {
+
+}
