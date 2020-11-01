@@ -1,0 +1,15 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+
+  min-width: 200px;
+
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  z-index: 3;
+}
+
+.modal.modal-my-calc {
+  max-width: 900px;
+}

@@ -1,0 +1,47 @@
+.modal-dialog {
+  @include box-shadow;
+
+  max-width: 490px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.modal-dialog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+
+  .btn:first-of-type {
+    margin-right: 5px;
+  }
+}
+
+.modal-dialog__title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal-dialog__subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  text-align: center;
+}
+
+.modal-dialog--unfinished {
+  .modal-dialog__title {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

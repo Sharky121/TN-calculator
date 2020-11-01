@@ -423,6 +423,10 @@ img {
   color: #ed1c24;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     position: relative;
@@ -542,18 +546,22 @@ img {
   }
 }
 .tooltip {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   display: block;
-  width: 24px;
-  height: 24px;
-  font-size: 18px;
-  line-height: 20px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   text-align: center;
   text-decoration: none;
   border: 2px solid #ed1c24;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 3;
 }
-.tooltip:hover, .tooltip:focus, .tooltip:active {
+.tooltip:hover, .tooltip:focus, .tooltip:active .tooltip__link {
   color: #ffffff;
   background-color: #ed1c24;
 }
@@ -757,6 +765,7 @@ img {
   color: #ffffff;
   background-color: #000000;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1434,6 +1443,194 @@ img {
 .result-calculation__title {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.modal-my-calc .container {
+  max-width: 900px;
+  padding-bottom: 20px;
+}
+
+.modal-my-calc__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-my-calc__header .btn {
+  min-width: 150px;
+  width: 150px;
+  font-size: 12px;
+}
+
+.modal-my-calc__body {
+  margin-bottom: 40px;
+}
+
+.modal-my-calc__title {
+  position: relative;
+  padding-left: 50px;
+  margin-right: auto;
+  font-size: 20px;
+}
+.modal-my-calc__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url(images/icon1.svg);
+  background-size: 32px 32px;
+}
+
+.modal-my-calc__header .btn--white {
+  margin-right: 10px;
+}
+
+.modal-my-calc__footer {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+.modal-my-calc__footer .btn {
+  width: 100%;
+}
+.modal-my-calc__footer .btn:first-of-type {
+  margin-right: 10px;
+}
+
+.modal-my-calc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-my-calc__item {
+  margin-bottom: 20px;
+}
+.modal-my-calc__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal-calc-item {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.modal-calc-item .btn:first-of-type {
+  margin-right: 10px;
+}
+
+.modal-calc-item__img {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.modal-calc-item__title {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0 -20px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.modal-calc-item__title span {
+  text-transform: uppercase;
+}
+
+.modal-calc-item__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.modal-calc-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.modal-calc-item__item {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.modal-calc-item__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-calc-item__item--tp::after {
+  background-image: url(images/tp.svg);
+  background-size: cover;
+}
+
+.modal-calc-item__item--zv::after {
+  background-image: url(images/icon-acoustic.svg);
+  background-size: cover;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  min-width: 200px;
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  z-index: 3;
+}
+
+.modal.modal-my-calc {
+  max-width: 900px;
+}
+
+.modal-dialog {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 490px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.modal-dialog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.modal-dialog__wrapper .btn:first-of-type {
+  margin-right: 5px;
+}
+
+.modal-dialog__title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal-dialog__subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.modal-dialog--unfinished .modal-dialog__title {
+  margin-bottom: 20px;
+}
+.modal-dialog--unfinished .btn {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=main.css.map*/

@@ -1,0 +1,78 @@
+.modal-calc-item {
+  @include box-shadow;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  .btn:first-of-type {
+    margin-right: 10px;
+  }
+}
+
+.modal-calc-item__img {
+  width: 180px;
+  height: 180px;
+
+  overflow: hidden;
+}
+
+.modal-calc-item__title {
+  position: relative;
+
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0 -20px 20px;
+
+  font-size: 18px;
+
+  border-bottom: 1px solid #dbdbdb;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.modal-calc-item__list {
+  @include list-reset;
+
+  margin-bottom: 20px;
+}
+
+.modal-calc-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+.modal-calc-item__item {
+  position: relative;
+
+  margin-bottom: 5px;
+
+  font-size: 14px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.modal-calc-item__item--tp::after {
+  background-image: url("../images/tp.svg");
+  background-size: cover;
+}
+
+.modal-calc-item__item--zv::after {
+  background-image: url("../images/icon-acoustic.svg");
+  background-size: cover;
+}

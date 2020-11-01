@@ -66,6 +66,10 @@ img {
   color: $color-crimson;
 }
 
+.hidden {
+  display: none;
+}
+
 @include tablet-size {
   body {
     position: relative;
