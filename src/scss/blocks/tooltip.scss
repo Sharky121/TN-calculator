@@ -26,3 +26,17 @@
     background-color: $color-crimson;
   }
 }
+
+.tooltip--white {
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active .tooltip__link {
+    color: #000000;
+
+    background-color: #ffffff;
+  }
+}

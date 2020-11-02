@@ -566,6 +566,15 @@ img {
   background-color: #ed1c24;
 }
 
+.tooltip--white {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.tooltip--white:hover, .tooltip--white:focus, .tooltip--white:active .tooltip__link {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .calc-form__label {
   display: block;
   margin-bottom: 10px;
